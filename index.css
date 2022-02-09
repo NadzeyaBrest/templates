@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.first {
+  display: flex;
+  height: 100vh;
+}
+.firstleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 180px;
+  width: 50%;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first a {
+  text-decoration: none;
+  color: rgb(57, 166, 235);
+  font-size: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav a {
+  color: blue;
+  margin-left: 10px;
+}
+.nav a:hover {
+  border-bottom: 2px solid blue;
+}
+.firstLeftHelp {
+  text-transform: uppercase;
+  color: blue;
+  font-size: 35px;
+  width: 60%;
+  font-weight: bold;
+}
+.fl2 {
+  font-size: 25px;
+  width: 60%;
+  color: blue;
+}
+.firstright {
+  position: relative;
+}
+.firstright a {
+  color: white;
+  background-color: rgb(57, 166, 235);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 40%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.firstright img {
+  margin-top: 20px;
+  border-radius: 30%;
+  transform: rotate(35deg);
+  width: 80%;
+}
+
+.firstleftbutton a:nth-child(2) {
+  color: orange;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+#button2 {
+  margin-right: 50px;
+  color: white;
+  background-color: orange;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.firstleftbutton {
+  display: flex;
+}
+.thriveTop {
+  background-color: rgb(57, 166, 235);
+  height: 604px;
+  display: flex;
+}
+
+.thriveTop-left {
+  display: flex;
+  margin-left: 180px;
+  flex-direction: column;
+}
+.thriveTop-left h2 {
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.thriveTop-left span {
+  margin: 10% 10% 10% 0;
+  font-size: 20px;
+}
+.thrivebottom {
+  display: flex;
+  height: 300px;
+  margin-top: 150px;
+}
+.thrivebottom span {
+  width: 30%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.thrivebottom p {
+  margin-left: 80px;
+}
+.helping {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 200px;
+  column-gap: 10px;
+}
+.helping p {
+  color: white;
+  border-top: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  transition: 2s;
+}
+.helping p:hover {
+  transform: translate(-20px, -20px);
+}
+.helping p:nth-child(1) {
+  background-color: pink;
+}
+.helping p:nth-child(2) {
+  background-color: greenyellow;
+}
+.helping p:nth-child(3) {
+  background-color: rgb(57, 166, 235);
+}
+.helping p:nth-child(4) {
+  background-color: blue;
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.help img {
+  width: 20px;
+  margin-right: 10px;
+  animation-name: pulsing;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid p {
+  color: white;
+  border-top: 2px solid white;
+  width: 100px;
+  margin-top: 50px;
+  padding-top: 20px;
+  margin-left: 40px;
+  font-size: 20px;
+}
+.grid div {
+  height: 250px;
+}
+.grid div:nth-child(1) {
+  background-color: rgb(26, 29, 58);
+}
+.grid div:nth-child(2) {
+  background-color: blue;
+}
+.grid div:nth-child(3) {
+  background: url("./joanna-kosinska-340748.png") center no-repeat;
+  background-size: cover;
+}
+.grid div:nth-child(4) {
+  background-color: rgb(57, 166, 235);
+}
+.grid div:nth-child(5) {
+  background-color: gainsboro;
+}
+.grid div:nth-child(6) {
+  background-color: blueviolet;
+}
+.white {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
+}
+.white div {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.white p {
+  color: blue;
+  margin-top: 40px;
+  font-size: 26px;
+}
+.white span {
+  margin-top: 20px;
+  color: gray;
+  font-size: 20px;
+}
+.sofa {
+  display: flex;
+}
+.sofa div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 150px;
+  color: blue;
+  width: 40%;
+}
+.sofa div a {
+  text-decoration: none;
+}
+
+.sofa div a:nth-child(3) {
+  color: orange;
+}
+.sofa img {
+  height: 600px;
+}
+
+.sofa span {
+  font-size: 30px;
+}
+.sofa span a {
+  color: rgb(57, 166, 235);
+}
+
+.smale {
+  display: flex;
+  background-color: blue;
+  justify-content: space-between;
+}
+.smale div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 150px;
+  color: white;
+  width: 40%;
+}
+.smale img {
+  height: 600px;
+}
+.smale h2 {
+  font-size: 45px;
+}
+.smale span {
+  font-size: 30px;
+}
+.smale div a {
+  text-decoration: none;
+  color: white;
+}
+.smale div a:nth-child(4) {
+  color: rgb(57, 166, 235);
+}
+.flower {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.flower1 {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 100px auto;
+  color: grey;
+}
+.flower1 span {
+  margin: 50px 0;
+  font-size: 18px;
+}
+.flower1 h3 {
+  color: blue;
+  font-size: 22px;
+}
+@keyframes pulsing {
+  from {
+  }
+  to {
+    transform: translateX(-40px);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .firstleft {
+    width: 100%;
+    margin-left: 90px;
+  }
+  .firstright img {
+    width: 100%;
+  }
+  .thriveTop-left {
+    margin-left: 90px;
+  }
+  .thrivebottom span {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* .first {
+    flex-direction: column;
+  } */
+  .first {
+    height: auto;
+  }
+
+  .thriveTop {
+    flex-direction: column;
+  }
+  .thrivebottom {
+    height: auto;
+    flex-direction: column;
+  }
+  .thriveTop-left img {
+    width: 400px;
+  }
+  .thrivebottom span {
+    width: 80%;
+  }
+  .helping {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .white {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flower {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
