@@ -1,96 +1,89 @@
 * {
   margin: 0;
-  padding: 0%;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
-.first {
-  display: flex;
-  height: 100vh;
-}
-.firstleft {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-left: 180px;
-  width: 50%;
-}
-
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.first a {
+  margin-top: 20px;
   text-decoration: none;
-  color: rgb(57, 166, 235);
-  font-size: 20px;
 }
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+header > a {
+  color: cadetblue;
+  font-weight: 700;
+  text-decoration: none;
 }
 .nav a {
   color: blue;
   margin-left: 10px;
+  text-decoration: none;
+  font-weight: 700;
 }
+
 .nav a:hover {
   border-bottom: 2px solid blue;
 }
-.firstLeftHelp {
+.firstLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  margin-left: 180px;
+  width: 50%;
+}
+.sp1 {
+  font-weight: 700;
   text-transform: uppercase;
   color: blue;
   font-size: 35px;
-  width: 60%;
-  font-weight: bold;
 }
-.fl2 {
-  font-size: 25px;
-  width: 60%;
+.abc {
   color: blue;
-}
-.firstright {
-  position: relative;
-}
-.firstright a {
-  color: white;
-  background-color: rgb(57, 166, 235);
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 40%;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-.firstright img {
-  margin-top: 20px;
-  border-radius: 30%;
-  transform: rotate(35deg);
+  font-size: 25px;
   width: 80%;
 }
+.firstLeft a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: cadetblue;
+}
 
-.firstleftbutton a:nth-child(2) {
-  color: orange;
-  text-transform: uppercase;
+.first {
+  display: flex;
+  overflow: hidden;
+}
+.firstleftbutton a:nth-child(1) {
+  background-color: orange;
+  color: white;
   padding: 10px 20px;
 }
-#button2 {
-  margin-right: 50px;
-  color: white;
-  background-color: orange;
+.firstleftbutton a:nth-child(2) {
+  color: orange;
   padding: 10px 20px;
-  text-decoration: none;
-  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.turn {
+  display: flex;
+}
+.turn img {
+  border-radius: 30% 20%;
+  transform: rotate(15deg);
+  width: 100%;
+  margin-top: 20px;
 }
 .firstleftbutton {
   display: flex;
 }
 .thriveTop {
   background-color: rgb(57, 166, 235);
-  height: 604px;
+
   display: flex;
+  color: white;
 }
 
 .thriveTop-left {
@@ -109,8 +102,9 @@ header {
 }
 .thrivebottom {
   display: flex;
-  height: 300px;
   margin-top: 150px;
+  color: blue;
+  font-weight: 700;
 }
 .thrivebottom span {
   width: 30%;
@@ -123,17 +117,19 @@ header {
 .helping {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 200px;
+  height: 400px;
   column-gap: 10px;
 }
 .helping p {
   color: white;
-  border-top: 5px solid white;
+
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
   transition: 2s;
+  font-weight: 700;
+  font-size: 25px;
 }
 .helping p:hover {
   transform: translate(-20px, -20px);
@@ -170,15 +166,16 @@ header {
 }
 .grid p {
   color: white;
-  border-top: 2px solid white;
-  width: 100px;
+  border-top: 4px solid white;
+  margin-right: 40px;
   margin-top: 50px;
   padding-top: 20px;
   margin-left: 40px;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 700;
 }
 .grid div {
-  height: 250px;
+  height: 400px;
 }
 .grid div:nth-child(1) {
   background-color: rgb(26, 29, 58);
@@ -234,17 +231,20 @@ header {
 }
 .sofa div a {
   text-decoration: none;
+  font-weight: 700;
 }
 
 .sofa div a:nth-child(3) {
   color: orange;
+  font-weight: 700;
 }
 .sofa img {
-  height: 600px;
+  width: 30%;
 }
 
 .sofa span {
   font-size: 30px;
+  font-weight: 900;
 }
 .sofa span a {
   color: rgb(57, 166, 235);
@@ -306,14 +306,10 @@ header {
   }
 }
 @media screen and (max-width: 1100px) {
-  .firstleft {
-    width: 100%;
+  .thriveTop-left {
     margin-left: 90px;
   }
-  .firstright img {
-    width: 100%;
-  }
-  .thriveTop-left {
+  .firstLeft {
     margin-left: 90px;
   }
   .thrivebottom span {
@@ -322,26 +318,13 @@ header {
 }
 
 @media screen and (max-width: 900px) {
-  /* .first {
-    flex-direction: column;
-  } */
-  .first {
-    height: auto;
-  }
-
   .thriveTop {
     flex-direction: column;
   }
   .thrivebottom {
-    height: auto;
     flex-direction: column;
   }
-  .thriveTop-left img {
-    width: 400px;
-  }
-  .thrivebottom span {
-    width: 80%;
-  }
+
   .helping {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -353,5 +336,30 @@ header {
   }
   .flower {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .first {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .firstLeft {
+    width: 100%;
+  }
+  .sp1 {
+    margin: 40px;
+  }
+  .abc {
+    margin: 0 40px 40px 40px;
+  }
+  .firstleftbutton {
+    margin: 0 0 40px 40px;
+  }
+  .turn img {
+    transform: none;
+    width: 80%;
+  }
+  .turn {
+    justify-content: center;
+    margin-bottom: 40px;
   }
 }
