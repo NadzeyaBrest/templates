@@ -27,7 +27,6 @@ header > a {
   border-bottom: 2px solid blue;
 }
 .slider {
-  font-family: "Muli", sans-serif;
   overflow: hidden;
   margin-bottom: 20px;
 
@@ -58,7 +57,7 @@ header > a {
 .slide h3 {
   position: absolute;
   font-size: 24px;
-  bottom: 20px;
+  bottom: 120px;
   left: 20px;
   margin: 0;
   opacity: 0;
